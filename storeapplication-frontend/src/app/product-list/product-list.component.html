@@ -1,0 +1,66 @@
+<div class="container mt-4">
+  <h3 class="mb-4" style="text-align: center;">All Products</h3>
+  
+  <div class="d-flex mb-3">       
+    <input type="text" [(ngModel)]="searchTerm" placeholder="Seach products by name" class="form-control-sm me-2">
+
+    <button class="btn btn-primary" type="button" (click)="searchProducts()">
+        <i class="bi bi-search"></i> Search
+    </button>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+    <div class="col" *ngFor="let product of products">
+      <div class="card h-100 product-card text-center">
+        
+        <div class="image-container">
+          <img [src]="product.imageURL" class="card-img-top product-image" alt="{{product.name}}">
+        </div>
+        
+        
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+          
+          <div>
+            <p class="card-text text-muted small"><strong>Price: </strong> <span class="h5 text-primary"> ${{ product.price | number:'1.2-2' }}</span>
+            <span *ngIf="product.quantityInStock > 0" class="badge bg-success ms-2">In Stock</span>
+            <span *ngIf="product.quantityInStock <= 0" class="badge bg-danger ms-2">Out of Stock</span>
+          </div>
+        </div>
+        
+        <div class="card-footer bg-transparent">
+          <div class="dd-flex justify-content-center gap-2 flex-wrap">
+
+            <button (click)="productDetails(product.id)" class="btn btn-sm btn-outline-primary">
+              <i class="bi bi-eye"></i> Details
+            </button>
+
+            <button (click)="updateProduct(product.id)" class="btn btn-sm btn-outline-secondary">
+              <i class="bi bi-pencil"></i> Edit
+            </button>
+
+            <button (click)="deleteProduct(product.id)" class="btn btn-sm btn-outline-danger">
+              <i class="bi bi-trash"></i> Delete
+            </button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav *ngIf="totalPages > 1" class="mt-4">
+    <ul class="pagination justify-content-center">
+      <li class="page-item" [class.disabled]="currentPage === 0">
+        <button class="page-link" (click)="onPageChange(currentPage - 1)">Previous</button>
+      </li>
+      <li class="page-item" *ngFor="let page of [].constructor(totalPages); let i = index" [class.active]="i === currentPage">
+        <button class="page-link" (click)="onPageChange(i)">{{ i + 1 }}</button>
+      </li>
+      <li class="page-item" [class.disabled]="currentPage === totalPages - 1">
+        <button class="page-link" (click)="onPageChange(currentPage + 1)">Next</button>
+      </li>
+    </ul>
+  </nav>
+
+</div>

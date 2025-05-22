@@ -1,0 +1,42 @@
+<div class="container mt-5">
+
+    <div class="card shadow-sm">
+        <div class="row g-0">
+            
+            <div class="col-md-4 text-center p-3 bg-light shadow-sm">
+                <img src="{{product.imageURL}}" class="img-fluid rounded" style="height: 100%; object-fit: cover;">
+            </div>
+           
+            <div class="col-md-8">
+                <div class="card-body">
+
+                    <h2 class="card-title display-5">{{product.name}}</h2>
+                    <br>
+                    <p class="card-text fs-5" *ngIf="product.category && product.category.trim().length > 0; else noCategory">
+                        <strong>Category:</strong> {{product.category}}
+                    </p>
+                    <ng-template #noCategory>
+                        <p class="card-text fs-5"><strong>Category:</strong> No category is provided for this product</p>
+                    </ng-template>
+                    
+                    <p class="card-text fs-5"><strong>Price:</strong> ${{product.price | number:'1.2-2'}}</p>
+
+                    <p class="card-text fs-5"><strong>Quantity available:</strong> {{product.quantityInStock}}</p>
+
+                    <p class="card-text fs-5" *ngIf="product.description && product.description.trim().length > 0; else noDescription">
+                        <strong>Description:</strong> {{product.description}}
+                    </p>
+                    <ng-template #noDescription>
+                        <p class="card-text fs-5"><strong>Description:</strong> No description is provided for this product</p>
+                    </ng-template>
+
+                </div>
+            </div>
+        </div>
+        <div class="card-footer text-center">
+            <button (click)="backToProducts()" class="btn btn-success">Back to all products</button>
+        </div>
+    </div>
+</div>
+
+
