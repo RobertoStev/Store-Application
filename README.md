@@ -1,6 +1,6 @@
 <h1><b>Store Application for managing products</b></h1>
 
-<p>This full-stack application, built with Spring Boot (backend), Angular (frontend), and MySQL database, provides complete CRUD functionality for product management. 
+<p>This full-stack application, built with Java Spring Boot (backend), Angular (frontend), and MySQL database, provides complete CRUD functionality for product management. 
   It allows users to Create, Read, Update, and Delete products through an intuitive interface with robust API support.</p>
 
 <p>To run the application, both components must be launched: start the Spring Boot backend server first, then launch the Angular frontend. 
@@ -34,7 +34,7 @@
 
 ![Image](https://github.com/user-attachments/assets/a5feb0fa-616e-40f6-aada-483023f8e16f)
 
-<p>Each product includes an Edit button for modifying its details. Clicking it navigates to a dynamic URL (e.g., http://localhost:4200/product-update/2), displaying a pre-populated form with the product's current data. The same validation rules apply as during creation—invalid or empty values for mandatory fields (name, price, quantity) trigger error messages. Successful edits (e.g., updating a price from 28 to 25.90) instantly reflect in both the product list and database.</p>
+<p>Each product includes an Edit button for modifying its details. Clicking it navigates to a dynamic URL (e.g., http://localhost:4200/product-update/2), displaying a pre-populated form with the product's current data. The same validation rules apply as during creation—invalid or empty values for mandatory fields (name, price, quantity) trigger error messages. Successful edits (e.g., updating a price from $28 to $25.90) instantly reflect in both the product list and database.</p>
 
 ![Image](https://github.com/user-attachments/assets/60f7bd8f-bc4f-4194-94f8-be3e833addc7)
 
