@@ -33,3 +33,9 @@
 ![Image](https://github.com/user-attachments/assets/33ae35d7-5844-4dc9-b03b-36a3646f796e)
 
 ![Image](https://github.com/user-attachments/assets/a5feb0fa-616e-40f6-aada-483023f8e16f)
+
+<p>Each product includes an Edit button for modifying its details. Clicking it navigates to a dynamic URL (e.g., http://localhost:4200/product-update/2), displaying a pre-populated form with the product's current data. The same validation rules apply as during creation—invalid or empty values for mandatory fields (name, price, quantity) trigger error messages. Successful edits (e.g., updating a price from 28 to 25.90) instantly reflect in both the product list and database.</p>
+
+![Image](https://github.com/user-attachments/assets/60f7bd8f-bc4f-4194-94f8-be3e833addc7)
+
+![Image](https://github.com/user-attachments/assets/dba8d79f-c332-469d-aa7c-36ef6fc4b422)
