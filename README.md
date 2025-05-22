@@ -46,3 +46,8 @@
 
 ![Image](https://github.com/user-attachments/assets/9ce7da0f-678c-4e6b-b045-fca6a49fff13)
 
+<p>The application includes search functionality where users can enter a product name prefix (not requiring the full name) and click the Search button to display all matching products containing that prefix.</p>
+
+![Image](https://github.com/user-attachments/assets/89397a99-8294-4f59-9099-ae29858fa4ec)
+
+![Image](https://github.com/user-attachments/assets/e188174f-135f-4322-a6f6-19b2bd1e20ad)
