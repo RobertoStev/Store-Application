@@ -28,7 +28,7 @@
 
 ![Image](https://github.com/user-attachments/assets/3c3bebc0-8b68-438b-8730-f48a29a1370e)
 
-<p>Each product features a Details button that redirects to a dynamic URL (e.g., http://localhost:4200/product-details/1, where '1' represents the product ID). This view displays additional information including category and description. Optional fields show placeholder text when empty: 'No description provided' and 'No category specified'.</p>
+<p>Each product features a Details button that redirects to a dynamic URL (e.g., http://localhost:4200/product-details/1, where '1' represents the product ID). This view displays additional information including category and description. Optional fields show placeholder text when empty: 'No description provided' and 'No category provided'.</p>
 
 ![Image](https://github.com/user-attachments/assets/33ae35d7-5844-4dc9-b03b-36a3646f796e)
 
