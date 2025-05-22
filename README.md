@@ -1,4 +1,4 @@
-<h1><b>Store Application for managing products</b></h1>
+w<h1><b>Store Application for managing products</b></h1>
 
 <p>This full-stack application, built with Spring Boot (backend), Angular (frontend), and MySQL database, provides complete CRUD functionality for product management. 
   It allows users to Create, Read, Update, and Delete products through an intuitive interface with robust API support.</p>
@@ -39,3 +39,10 @@
 ![Image](https://github.com/user-attachments/assets/60f7bd8f-bc4f-4194-94f8-be3e833addc7)
 
 ![Image](https://github.com/user-attachments/assets/dba8d79f-c332-469d-aa7c-36ef6fc4b422)
+
+<p>The application includes a Delete button for each product. Clicking it (e.g., for 'Coca-Cola') triggers a confirmation dialog. Upon confirming, the product is permanently deleted from the database and removed from the product list.</p>
+
+![Image](https://github.com/user-attachments/assets/70e46aa5-c135-41ab-87be-fd8133deba5b)
+
+![Image](https://github.com/user-attachments/assets/9ce7da0f-678c-4e6b-b045-fca6a49fff13)
+
