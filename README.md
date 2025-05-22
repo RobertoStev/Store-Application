@@ -51,3 +51,7 @@
 ![Image](https://github.com/user-attachments/assets/89397a99-8294-4f59-9099-ae29858fa4ec)
 
 ![Image](https://github.com/user-attachments/assets/e188174f-135f-4322-a6f6-19b2bd1e20ad)
+
+<p>The application displays a custom 'Not Found' page when users attempt to access non-existent routes or invalid URLs.</p>
+
+![Image](https://github.com/user-attachments/assets/e84c83a4-20be-4be1-92f1-46eff7b017d4)
